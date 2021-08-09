@@ -1,0 +1,124 @@
+.form{
+    background: 
+        linear-gradient( rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+        url('../assets/images/wave-bkgd.jpg');
+    background-repeat: none;
+    background-position: bottom;
+    height: 350px;
+    width:100%;
+
+
+    text-align: center;   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 2rem;
+
+        color: white;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                        0px 8px 10px rgba(0,0,0,0.2); 
+        margin-bottom: 3rem;
+
+        em{   
+            font-family: 'playfairDisplay italic';
+      
+        }
+        strong{
+            font-family: 'playfairDisplay bold';
+        }
+    }
+
+    p{
+        font-family: 'raleway light';
+        color: white;
+        line-height: 2.2rem;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+
+    }
+
+    .button-border{
+        border-radius: 100px;
+        background-color: white;
+        border: 2px solid white;
+        width: 245px;
+        padding-left: 20px;
+
+        margin: 0 auto;
+        
+        button{
+            outline: none;
+            background-color: $orange;
+            width: 90px;
+            color: white;
+            padding: 3px;
+            border-radius: 100px;
+
+            &:hover{
+                background-color: $orange-light;
+            }
+        }
+
+        input[type=email]{
+            outline: none;
+            border: none;
+     
+            font-family: 'raleway light';
+            width: 150px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @include tablet_screen{
+        height: 350px;
+
+        h2{
+            font-size: 3rem;
+        }
+
+        p{
+            line-height: 2rem;
+            font-size: 1.5rem;
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+
+         .button-border{
+            height: 40px;        
+            width: 345px;
+    
+            button{
+                height: 40px;
+                width: 115px;
+                font-size: 1rem;
+            }
+    
+            input[type=email]{
+                height: 40px;
+                font-size: 1rem;
+                width: 225px;
+            }
+        }
+    }
+
+    @include desktop_screen{
+        background-size: cover;
+
+        height: 430px;
+        h2{
+            font-size: 2.5rem;
+        }
+
+        p{
+            line-height: 2rem;
+            font-size: 1.5rem;
+            padding-left: 23rem;
+            padding-right: 23rem;
+        }
+    }
+}

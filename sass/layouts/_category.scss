@@ -1,0 +1,127 @@
+.category{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5rem;
+
+
+    img{
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 200px;
+    }
+
+    .category_text-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+
+        p{
+            font-family: 'raleway medium';
+            font-size: 1.9rem;
+            color: white;
+            z-index: 10;
+            text-transform: uppercase;
+        }
+    }
+
+    .category_container{
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+        background-color: black; 
+        
+        &:hover{
+            opacity: .8;
+        }
+    }
+
+    .mens{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5; 
+        transition: .9s ease; 
+    }
+
+    
+    .trends{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+    
+    .glasses{
+        grid-area: 2 / 3 / 3 / 5;
+
+    }
+    
+    .sale{
+        grid-area: 3 / 1 / 4 / 3;
+ 
+    }
+    
+    .bags{
+        grid-row: 3 / 4;
+        grid-column: 3 / 5;
+    }
+
+    .womens{
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+    }
+
+
+    @include tablet_screen{
+        grid-template-rows: repeat(2, 1fr);
+        .mens{
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+        
+        .trends{
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+        }
+    
+        .glasses{
+            grid-row: 1 / 2;
+            grid-column: 4 / 5;
+        }
+    
+        .sale{
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+    
+        .bags{
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+    
+        .womens{
+            grid-row: 2 / 3;
+            grid-column: 3 / 5;
+        }
+    }
+
+    @include desktop_screen{
+        grid-gap: .6rem;
+        img{
+            height: 290px;
+        }
+        .category_container{
+            height: 290px;
+        }
+        .category_text-center{
+            height: 290px;
+        }
+    }
+
+}
+
+

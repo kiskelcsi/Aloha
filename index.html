@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- jQuery -->
+    <script src="./src/library/jquery-3.2.1.js"></script>
+    <script src="./src/main.js"></script>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/jpeg"
+      href="./assets/images/favicon.jpeg"
+    />
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="./css/flickity.css" />
+    <script src="./src/library/flickity.pkgd.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav__logo">
+            <a href="#home"
+              ><img src="./assets/images/aloha-logo.svg" alt="logo"
+            /></a>
+          </li>
+          <li class="nav__cart">
+            <a href="#cart"
+              ><img src="./assets/images/cart-icon.svg" alt="cart icon"
+            /></a>
+          </li>
+          <li class="nav__li"><a href="#message">About</a></li>
+          <li class="nav__li"><a href="#Shop">Shop</a></li>
+          <li class="nav__li"><a href="#features">Features </a></li>
+          <li class="nav__li"><a href="#updates">Update</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="jumbotron">
+      <span class="banner-girl"> </span>
+      <span class="black-background"></span>
+
+      <div class="jumbotron__message">
+        <h1>NEW COLLECTION</h1>
+        <p>Spring/Summer 2016</p>
+      </div>
+    </section>
+    <!-- Jumbotron -->
+    <section class="message" id="message">
+      <div class="message-center">
+        <h2>
+          <em>Hand-Crafted</em>
+          <strong>Styles</strong>
+        </h2>
+        <p>
+          Aloha Apparel Co. sells only the finest ready-to-travel clothing.
+          Browser our current section of products or sign-up for updates below.
+        </p>
+      </div>
+    </section>
+    <!-- Message -->
+    <section class="category" id="features">
+      <div class="mens">
+        <div class="category_container">
+          <img
+            class="men__image"
+            src="./assets/images/mens-category.jpg"
+            alt="aloha mens category"
+          />
+
+          <div class="category_text-center">
+            <p>men's</p>
+          </div>
+        </div>
+      </div>
+      <!-- mens -->
+
+      <div class="trends">
+        <div class="category_container">
+          <img
+            src="./assets/images/trends-category.jpg"
+            alt="aloha trend category"
+          />
+
+          <div class="category_text-center">
+            <p>trends</p>
+          </div>
+        </div>
+      </div>
+      <!-- trends -->
+
+      <div class="glasses">
+        <div class="category_container">
+          <img
+            src="./assets/images/glasses-category.jpg"
+            alt="aloha glasses category"
+          />
+
+          <div class="category_text-center">
+            <p>glasses</p>
+          </div>
+        </div>
+      </div>
+      <!-- glasses -->
+
+      <div class="sale">
+        <div class="category_container">
+          <img
+            src="./assets/images/sale-category.jpg"
+            alt="aloha sale category"
+          />
+
+          <div class="category_text-center">
+            <p>sale</p>
+          </div>
+        </div>
+      </div>
+      <!-- sale -->
+
+      <div class="bags">
+        <div class="category_container">
+          <img
+            src="./assets/images/bags-category.jpg"
+            alt="aloha bags category"
+          />
+
+          <div class="category_text-center">
+            <p>bags</p>
+          </div>
+        </div>
+      </div>
+      <!-- bags -->
+
+      <div class="womens">
+        <div class="category_container">
+          <img
+            src="./assets/images/womens-category.jpg"
+            alt="aloha women category"
+          />
+
+          <div class="category_text-center">
+            <p>womens</p>
+          </div>
+        </div>
+      </div>
+      <!-- womens -->
+    </section>
+    <!-- category -->
+    <section class="products">
+      <div class="product_title">
+        <h2>
+          <em>Most-Loved</em>
+          <strong>Products</strong>
+        </h2>
+      </div>
+
+      <div class="main-carousel" id="Shop">
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/stretch-knit-dress.jpg"
+              alt="Strech Knit Dress"
+            />
+            <p>DRESSES</p>
+            <p class="orange__p">Strech Knit Dress</p>
+            <p>$169.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/cotton-blue-shirt.jpg"
+              alt="Cotton Blue Shirts"
+            />
+            <p>SHIRTS</p>
+            <p class="orange__p">Cotton Blue Shirts</p>
+            <p>$89.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/checked-stretch-dress.jpg"
+              alt="Checked Strech Dress"
+            />
+            <p>DRESSES</p>
+            <p class="orange__p">Checked Strech Dress</p>
+            <p>$129.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/blue-hipster-backpack.jpg"
+              alt="backpack"
+            />
+            <p>BAGS</p>
+            <p class="orange__p">Blue Hipster Backpack</p>
+            <p>$69.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/demin-overall-shorts.jpg"
+              alt="Demin Overall Shorts"
+            />
+            <p>DEMIN</p>
+            <p class="orange__p">Demin Overall Shorts</p>
+            <p>$89.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/pink-dotted-dress.jpg"
+              alt="Pink Dotted Dress"
+            />
+            <p>DRESS</p>
+            <p class="orange__p">Pink Dotted Dress</p>
+            <p>$99.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/cotton-yellow-tshirt.jpg"
+              alt="Cotton Yellow Shirts"
+            />
+            <p>SHIRTS</p>
+            <p class="orange__p">Cotton Yellow Shirts</p>
+            <p>$49.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="container-img">
+            <img
+              src="./assets/images/blue-silk-dress.jpg"
+              alt="Blue Silk Dress"
+            />
+            <p>DRESS</p>
+            <p class="orange__p">Blue Silk Dress</p>
+            <p>$159.00</p>
+            <button class="addToCard" onClick="onClick()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products -->
+    <section class="form">
+      <form action="#first-grid" method="#" id="updates">
+        <h2>
+          <em>Sign-up for</em>
+          <strong>Updates</strong>
+        </h2>
+
+        <p>
+          Stay update on our latest product releases, be first to find out about
+          upcomming sales, and get free style tips from our blog. Unsubscribe at
+          any time.
+        </p>
+
+        <div class="button-border">
+          <!-- placeholder="Your Email" -->
+          <input type="email" name="email" placeholder="Your Email" />
+          <button id="submitButton">Subscribe</button>
+        </div>
+      </form>
+    </section>
+    <!-- from -->
+
+    <footer>
+      <div class="brand-container">
+        <div class="brand-info">
+          <h3>&copy 2018 Aloha Apparl Co.</h3>
+          <p>Powered by HTML and CSS.</p>
+          <br />
+          <p>604-604-604. info@alohaapparel.com</p>
+        </div>
+        <div class="brand-address">
+          <p>1490 W Broadway</p>
+          <p>Vancover, BC, Canada</p>
+        </div>
+      </div>
+
+      <div class="social-container">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i
+              ><span>Facebook</span></a
+            >
+          </li>
+
+          <li>
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter" aria-hidden="true"></i
+              ><span>Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram" aria-hidden="true"></i
+              ><span>Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.pinterest.ca/">
+              <i class="fab fa-pinterest" aria-hidden="true"></i
+              ><span>Pinterest</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.google.ca/">
+              <i class="fab fa-google-plus" aria-hidden="true"></i
+              ><span>Google+</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

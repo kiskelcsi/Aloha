@@ -1,0 +1,108 @@
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/images/flower-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+
+  height: 450px;
+  width: 100%;
+
+  .banner-girl {
+    position: absolute;
+    z-index: 1;
+    background: url("../assets/images/banner-girl.png");
+    background-repeat: no-repeat;
+    /* Scaling background images */
+    background-size: 13rem;
+    background-position: 50% 140%;
+
+    height: 450px;
+    width: 100%;
+  }
+
+  .black-background {
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+
+    height: 450px;
+    width: 100%;
+  }
+
+  &__message {
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    height: 450px;
+    width: 100%;
+
+    h1 {
+      font-family: "raleway light";
+      font-weight: bold;
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-family: "playfairDisplay";
+      color: white;
+      padding: 1rem 4rem 0 4rem;
+      font-size: 3rem;
+    }
+  }
+
+  @include tablet_screen {
+    .banner-girl {
+      background-size: 12rem;
+      background-position: 50% 5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 3rem;
+    }
+  }
+
+  @include desktop_screen {
+    background-size: 1300px 600px;
+    background-position: center top;
+    background-repeat: repeat-x;
+
+    height: 600px;
+
+    &__message {
+      height: 600px;
+    }
+
+    .black-background {
+      height: 600px;
+    }
+
+    .banner-girl {
+      background-size: 16rem;
+      background-position: 50% 5rem;
+      height: 600px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 3.5rem;
+    }
+  }
+}

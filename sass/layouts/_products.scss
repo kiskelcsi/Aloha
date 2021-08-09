@@ -1,0 +1,144 @@
+.products{
+    height:650px;
+ 
+    .product_title{
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+
+        h2{
+            font-size: 2.8rem;
+    
+            em{
+                font-family: 'playfairDisplay italic';
+            }
+
+            strong{
+                font-family: 'playfairDisplay bold';
+                padding-left: .2em;
+            }
+        }
+    }
+
+    // carousel
+
+    .main-carousel{
+        width: 100%;
+        height: 460px;
+    
+
+        .carousel-cell{
+
+            text-align: center;
+           
+            height: 500px;
+            width:100%;
+
+            .container-img{
+
+                img{
+                    height: 345px;
+                    width: 80%;
+                }
+
+                p{
+                    font-family: 'raleway light'; 
+                    font-size: .9rem;
+                    line-height: 2rem;
+                    color: $light-gray;
+                   
+                
+                    &.orange__p{
+                        font-family: 'playfairDisplay';  
+                        font-size: 1.3rem;
+                        color: $orange;  
+                    }
+                }
+
+                .addToCard{
+                    display: none;
+                }              
+            }
+        }
+    }
+
+
+    @include tablet_screen{
+        height: 620px;
+
+        .product_title{
+            h2{
+                font-size: 2.8rem;
+            }
+        }
+
+        .main-carousel{
+            height: 410px;
+    
+            .carousel-cell{
+                height: 450px;
+                width:50%; 
+    
+                .container-img{
+                    img{
+                        height: 270px;
+                        max-width: 80%;
+                    }
+    
+                    p{
+                        line-height: 2.4rem;
+                        font-size: .9rem;
+                
+                        &.orange__p{
+                            padding: 0 8rem;
+                            line-height: 1.2em;
+                            font-size: 1.5rem;         
+                        }
+                    }
+                }
+            }
+        }
+    } // tablet 
+
+    @include desktop_screen{
+        height: 650px;
+
+        .product_title{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+
+        .main-carousel{
+            height: 440px;
+
+            .carousel-cell{
+                height: 430px;
+                width:25%; 
+    
+                .container-img{
+                    p{
+                        font-size: .8rem;
+                
+                        &.orange__p{
+                            padding: 0;     
+                        }
+                    }
+
+                    .addToCard{
+                        display: inline-block;
+                        border-radius: 25px;
+                        background-color: $light-black;
+                        padding: 2px;
+                        color: white;
+                        width: 100px;
+
+                        font-family: 'raleway light';
+                        font-size: .8rem;
+                        margin-top: .1rem;
+                    }
+                }
+            }
+        }
+    }
+}

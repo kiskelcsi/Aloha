@@ -1,0 +1,96 @@
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: $light-black;
+	text-align: center;
+    /* p adress */
+    margin-top: .5rem;
+    padding-top: 5rem;
+
+
+    .brand-container{
+        .brand-info{
+            h3, p{
+                font-family: 'playfairDisplay';
+                color: white;
+                line-height: 1.7rem;
+                font-size:  1rem;
+            }
+        }
+
+        .brand-address{
+            padding-top: 1rem;
+            p {
+                font-family: 'playfairDisplay';
+                line-height: 1.7em;
+                color: $light-gray;
+                font-size: .9em;
+
+            }
+        }
+    }
+
+    .social-container{
+        padding-top: 1rem;
+     
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+    
+            li{
+                padding: .5rem;
+         
+                .fab{
+                    color: white;
+                }
+                span{
+                    display: none;
+                }
+                a{
+                    font-family: 'raleway light';
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    @include tablet_screen{
+
+        text-align: start;
+        box-sizing: border-box;
+        padding: 5rem 2rem 0 2rem;
+
+        .brand-container{
+            float: left;
+        }
+    
+        .social-container{
+            padding: 0;
+            float: right;
+            ul{
+                flex-direction: column;
+                li{
+                    padding: 1rem;
+                    padding-top: 0;   
+
+                    .fab{
+                        width: 25px;
+                    }
+                    span{
+                  
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    } //tablet screen
+
+ 
+    @include desktop_screen{
+        height: 400px;
+        padding: 5rem 5rem 1rem 5rem;
+    }
+}
